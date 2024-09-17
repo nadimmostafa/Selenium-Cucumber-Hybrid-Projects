@@ -1,0 +1,28 @@
+package org.nadim.pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class HomePage {
+	
+	public HomePage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
+	
+	//Locator Objects
+	@FindBy(xpath="//span[text()='My Account']")
+	WebElement myAccountButton;
+	
+	@FindBy(linkText="Login")
+	WebElement registerAccount;
+	
+	@FindBy()
+	WebElement loginAccount;
+	
+	@FindBy(name="search")
+	WebElement searchProduct;
+	
+	// Action Methods
+}

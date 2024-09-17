@@ -1,0 +1,47 @@
+package org.nadim.stepdefinations;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class TC001_Login {
+	@Given("user should navigate to login page")
+	public void user_should_navigate_to_login_page() {
+	   
+	}
+
+	@When("user has to entered valid email-address <email>")
+	public void user_has_to_entered_valid_email_address_email() {
+	  
+	}
+
+	@When("entered valid password <password>")
+	public void entered_valid_password_password() {
+	   
+	}
+
+	@When("Click on login button")
+	public void click_on_login_button() {
+	    
+	}
+
+	@Then("Navigate to Account Page")
+	public void navigate_to_account_page() {
+	    
+	}
+
+	@When("user has to entered invalid email-address <email>")
+	public void user_has_to_entered_invalid_email_address_email() {
+	    
+	}
+
+	@Then("user should get Wranning message")
+	public void user_should_get_wranning_message() {
+	    
+	}
+
+	@When("entered invalid password <password>")
+	public void entered_invalid_password_password() {
+	    
+	}
+}

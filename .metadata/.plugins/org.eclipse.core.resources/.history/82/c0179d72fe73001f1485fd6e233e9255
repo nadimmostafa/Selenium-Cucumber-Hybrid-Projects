@@ -1,0 +1,25 @@
+package org.nadim.base;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Base {
+	
+	public WebDriver driver;
+	
+	public WebDriver lauchBrowser(String browser, String url) throws Exception {
+		
+		if(browser.equalsIgnoreCase("chrome")) {
+			driver = new ChromeDriver();
+		}else if(browser.equalsIgnoreCase("firefox")) {
+			driver = new FirefoxDriver();
+		}else {
+			throw new Exception("Does not supported browser "+ browser);
+		}
+		driver.get(url);
+		driver.manage().window().maximize();
+		
+		return driver;
+	}
+}

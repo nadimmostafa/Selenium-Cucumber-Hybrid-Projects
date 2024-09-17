@@ -1,0 +1,26 @@
+##This feature file contains all Register functionality test scenarios
+
+@register
+Feature: Register Functionality
+
+  @tag1
+  Scenario: Create New Account with Mandatory Fields
+    Given User Should Navigate to register Page
+    When User enter below fields data
+    |firstname       |Attab|
+    |lastname        |Ahmed|
+    |e-mail          |attab26@gmail.com|
+    |telephone       |098172363|
+    |password        |54321|
+    |confirm password|54321|
+
+  @tag2
+  Scenario Outline: Title of your scenario outline
+    Given I want to write a step with <name>
+    When I check for the <value> in step
+    Then I verify the <status> in step
+
+    Examples: 
+      | name  | value | status  |
+      | name1 |     5 | success |
+      | name2 |     7 | Fail    |

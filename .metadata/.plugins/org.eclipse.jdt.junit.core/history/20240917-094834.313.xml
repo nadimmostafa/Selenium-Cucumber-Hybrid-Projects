@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="CucumberHybridFramework" tests="6" started="6" failures="0" errors="12" ignored="0">
+  <testsuite name="org.nadim.testrunner.TestRunner" time="0.012">
+    <testsuite name="Login Functionality" time="0.003">
+      <testcase name="Login with valid Credentials" classname="Login Functionality" time="0.002">
+        <error>java.lang.NullPointerException: Cannot invoke "org.nadim.utility.ConfigProperty.getData()" because "this.cp" is null&#13;
+	at org.nadim.hooks.MyHooks.startUp(MyHooks.java:18)&#13;
+&#13;
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null&#13;
+	at org.nadim.hooks.MyHooks.tearDown(MyHooks.java:24)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Login with Invalid Email Address" classname="Login Functionality" time="0.0">
+        <error>java.lang.NullPointerException: Cannot invoke "org.nadim.utility.ConfigProperty.getData()" because "this.cp" is null&#13;
+	at org.nadim.hooks.MyHooks.startUp(MyHooks.java:18)&#13;
+&#13;
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null&#13;
+	at org.nadim.hooks.MyHooks.tearDown(MyHooks.java:24)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Login with Invalid Password" classname="Login Functionality" time="0.0">
+        <error>java.lang.NullPointerException: Cannot invoke "org.nadim.utility.ConfigProperty.getData()" because "this.cp" is null&#13;
+	at org.nadim.hooks.MyHooks.startUp(MyHooks.java:18)&#13;
+&#13;
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null&#13;
+	at org.nadim.hooks.MyHooks.tearDown(MyHooks.java:24)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Login without credentials" classname="Login Functionality" time="0.0">
+        <error>java.lang.NullPointerException: Cannot invoke "org.nadim.utility.ConfigProperty.getData()" because "this.cp" is null&#13;
+	at org.nadim.hooks.MyHooks.startUp(MyHooks.java:18)&#13;
+&#13;
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null&#13;
+	at org.nadim.hooks.MyHooks.tearDown(MyHooks.java:24)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Search Functionality" time="0.009">
+      <testcase name="Searching with Valid product Name" classname="Search Functionality" time="0.001">
+        <error>java.lang.NullPointerException: Cannot invoke "org.nadim.utility.ConfigProperty.getData()" because "this.cp" is null&#13;
+	at org.nadim.hooks.MyHooks.startUp(MyHooks.java:18)&#13;
+&#13;
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null&#13;
+	at org.nadim.hooks.MyHooks.tearDown(MyHooks.java:24)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Searching with invalid Product Name" classname="Search Functionality" time="0.008">
+        <error>java.lang.NullPointerException: Cannot invoke "org.nadim.utility.ConfigProperty.getData()" because "this.cp" is null&#13;
+	at org.nadim.hooks.MyHooks.startUp(MyHooks.java:18)&#13;
+&#13;
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null&#13;
+	at org.nadim.hooks.MyHooks.tearDown(MyHooks.java:24)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

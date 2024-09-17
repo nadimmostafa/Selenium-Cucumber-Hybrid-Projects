@@ -1,0 +1,42 @@
+package org.nadim.stepdefinations;
+
+import org.junit.Assert;
+import org.nadim.base.Base;
+import org.openqa.selenium.By;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class TC003_Search extends Base{
+	
+	@Given("open an Application")
+	public void open_an_application() {
+		System.out.println("Application Opend");
+	}
+
+	@When("user entered Valid Product Name {string} into search box")
+	public void user_entered_valid_product_name_into_search_box(String productName) {
+	   driver.findElement(By.name("search")).sendKeys(productName);
+	}
+
+	@When("click on search button")
+	public void click_on_search_button() {
+		driver.findElement(By.xpath("//span//button[@type='button']")).click();
+	}
+
+	@Then("product display on search page")
+	public void product_display_on_search_page() {
+		Assert.assertTrue(driver.findElement(By.linkText("HP LP3065")).isDisplayed());
+	}
+
+	@When("user entered invalid Product Name {string} into search box")
+	public void user_entered_invalid_product_name_into_search_box(String string) {
+	
+	}
+
+	@Then("Get warnning message on search page")
+	public void get_warnning_message_on_search_page() {
+		
+	}
+}

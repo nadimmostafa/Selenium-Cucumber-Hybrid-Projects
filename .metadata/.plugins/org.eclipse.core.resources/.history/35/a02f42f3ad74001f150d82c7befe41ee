@@ -1,0 +1,11 @@
+package org.nadim.pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+public class UserAccountHomePage {
+	
+	public UserAccountHomePage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
+}

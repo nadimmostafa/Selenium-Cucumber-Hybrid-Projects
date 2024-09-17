@@ -1,0 +1,22 @@
+#This feature file contain all Login functionality test scenarios
+@login
+Feature: Login Functionality
+
+  @loginForValidCredentials
+  Scenario: Login with valid Credentials
+    Given user should navigate to login page
+    When user has to entered valid email-address <email>
+    And entered valid password <password>
+    Then Navigate to Account Page
+
+
+  @tag2
+  Scenario Title of your scenario outline
+    Given I want to write a step with <name>
+    When I check for the <value> in step
+    Then I verify the <status> in step
+
+    Examples: 
+      | name  | value | status  |
+      | name1 |     5 | success |
+      | name2 |     7 | Fail    |

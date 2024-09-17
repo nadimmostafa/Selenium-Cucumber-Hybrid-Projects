@@ -1,0 +1,40 @@
+package org.nadim.stepdefinations;
+
+import org.nadim.base.Base;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class TC003_Search extends Base{
+	
+	@Given("open an Application")
+	public void open_an_application() {
+		System.out.println("Application Opend");
+	}
+
+	@When("user entered Valid Product Name {string} into search box")
+	public void user_entered_valid_product_name_into_search_box(String string) {
+	   
+	}
+
+	@When("click on search button")
+	public void click_on_search_button() {
+		
+	}
+
+	@Then("product display on search page")
+	public void product_display_on_search_page() {
+		
+	}
+
+	@When("user entered invalid Product Name {string} into search box")
+	public void user_entered_invalid_product_name_into_search_box(String string) {
+	
+	}
+
+	@Then("Get warnning message on search page")
+	public void get_warnning_message_on_search_page() {
+		
+	}
+}

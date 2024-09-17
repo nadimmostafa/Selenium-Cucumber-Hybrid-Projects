@@ -1,0 +1,32 @@
+package org.nadim.pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class SearchPage {
+	public SearchPage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
+	
+	//Locator Objects
+	@FindBy(linkText="HP LP3065")
+	WebElement actualTextForValidSearch;
+	
+	@FindBy()
+	WebElement actualTextForInvalidSearch;
+	
+	// Action Methods
+	
+	public boolean getTextForValidSearch() {
+		boolean isProductPresent=false;
+		return isProductPresent;
+	}
+	
+	public String getTextForInvalidText() {
+		String invalidText=null;
+		
+		return invalidText;
+	}
+}

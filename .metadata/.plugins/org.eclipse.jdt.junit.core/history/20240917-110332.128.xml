@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="CucumberHybridFramework" tests="4" started="4" failures="0" errors="3" ignored="0">
+  <testsuite name="org.nadim.testrunner.TestRunner" time="40.365">
+    <testsuite name="Login Functionality" time="40.365">
+      <testcase name="Login with valid Credentials" classname="Login Functionality" time="20.661">
+        <error>java.lang.NullPointerException: Cannot invoke "org.nadim.pages.UserAccountHomePage.getLoginSuccessText()" because "this.uapage" is null&#13;
+	at org.nadim.stepdefinations.TC001_Login.navigate_to_account_page(TC001_Login.java:45)&#13;
+	at ✽.Navigate to Account Page(file:///G:/02.%20Automation%20Testing/Cucumber%20Project%20WorkSpace/CucumberHybridFramework/src/test/resources/features/Login.feature:12)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Login with Invalid Email Address" classname="Login Functionality" time="8.985">
+        <error>java.lang.NullPointerException: Cannot invoke "org.nadim.pages.LoginPage.enterEmail(String)" because "this.lPage" is null&#13;
+	at org.nadim.stepdefinations.TC001_Login.user_has_to_entered_invalid_email_address(TC001_Login.java:50)&#13;
+	at ✽.user has to entered invalid email-address "dpython426@gmail.com"(file:///G:/02.%20Automation%20Testing/Cucumber%20Project%20WorkSpace/CucumberHybridFramework/src/test/resources/features/Login.feature:17)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Login with Invalid Password" classname="Login Functionality" time="6.29"/>
+      <testcase name="Login without credentials" classname="Login Functionality" time="4.426">
+        <error>java.lang.NullPointerException: Cannot invoke "org.nadim.pages.LoginPage.clickLoginBtn()" because "this.lPage" is null&#13;
+	at org.nadim.stepdefinations.TC001_Login.click_on_login_button(TC001_Login.java:39)&#13;
+	at ✽.Click on login button(file:///G:/02.%20Automation%20Testing/Cucumber%20Project%20WorkSpace/CucumberHybridFramework/src/test/resources/features/Login.feature:33)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

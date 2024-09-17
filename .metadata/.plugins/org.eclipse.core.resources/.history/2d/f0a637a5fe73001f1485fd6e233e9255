@@ -1,0 +1,15 @@
+package org.nadim.testrunner;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		features= {"src/test/resources/features.TC001_Login.java"},
+		glue={"org.nadim.stepdefinations","org.nadim.hooks"}
+		)
+public class TestRunner {
+
+}

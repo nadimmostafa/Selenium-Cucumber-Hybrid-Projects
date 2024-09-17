@@ -1,0 +1,56 @@
+#Keywords Summary: This feature file contains all test scenarios for Register functionality
+@register
+Feature: Register Functionality
+
+  @RegisterWithMandatoryFields
+  Scenario: Create New Account with Mandatory Fields
+    Given User Should Navigate to register Page
+    When User enter below fields data
+      | firstname        | Attab             |
+      | lastname         | Ahmed             |
+      | e-mail           | attab26@gmail.com |
+      | telephone        |         098172363 |
+      | password         |             54321 |
+      | confirm password |             54321 |
+    And click on subscribe no radio button
+    And click on Privacy Policy checkbox
+    And Click on Continue button
+    Then navigate to account success page and show success message
+
+  @RegisterWithExistingEmail
+  Scenario: Create new Account with existing email address
+    Given User Should Navigate to register Page
+    When User enter below fields data with existing email
+      | firstname        | Samad             |
+      | lastname         | Ali               |
+      | e-mail           | attab26@gmail.com |
+      | telephone        |         017893032 |
+      | password         |            123654 |
+      | confirm password |            123654 |
+    And click on subscribe no radio button
+    And click on Privacy Policy checkbox
+    And Click on Continue button
+    Then User should get Wranning message
+    
+    @RegisterWithWrongConfirmPass
+    Scenario: Create New Account with Wrong confirm password
+     When User enter below fields data with wrong confirm password
+      | firstname        | Samad             |
+      | lastname         | Ali               |
+      | e-mail           | attab26@gmail.com |
+      | telephone        |         017893032 |
+      | password         |            123654 |
+      | confirm password |            128654 |
+    And click on subscribe no radio button
+    And click on Privacy Policy checkbox
+    And Click on Continue button
+    Then User should get Wranning message    
+    
+      
+    @RegisterWithoutInputData
+    Scenario: Create new account Without filling any input fields
+     Given User Should Navigate to register Page
+     When click on continue button
+     Then User should get Proper Warnning Messages
+     
+     

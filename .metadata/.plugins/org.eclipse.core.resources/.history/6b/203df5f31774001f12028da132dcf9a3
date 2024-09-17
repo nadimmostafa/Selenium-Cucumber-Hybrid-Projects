@@ -1,0 +1,15 @@
+#Author: nadimmostafa26@gmail.com
+#Keywords Summary: This Feature file contains all Test Scenarios for Search functionality 
+
+@search
+Feature: Search Functionality
+
+  @tag1
+  Scenario: Searching with Valid product Name
+
+
+  @tag2
+  Scenario Outline: Searching with invalid Product Name
+ 
+
+  

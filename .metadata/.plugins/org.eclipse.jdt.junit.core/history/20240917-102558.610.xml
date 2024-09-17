@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="CucumberHybridFramework" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="org.nadim.testrunner.TestRunner" time="20.012">
+    <testsuite name="Search Functionality" time="20.012">
+      <testcase name="Searching with Valid product Name" classname="Search Functionality" time="14.405"/>
+      <testcase name="Searching with invalid Product Name" classname="Search Functionality" time="5.606"/>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="CucumberHybridFramework" tests="6" started="6" failures="1" errors="0" ignored="0">
+  <testsuite name="org.nadim.testrunner.TestRunner" time="36.296">
+    <testsuite name="Login Functionality" time="26.207">
+      <testcase name="Login with valid Credentials" classname="Login Functionality" time="9.608"/>
+      <testcase name="Login with Invalid Email Address" classname="Login Functionality" time="5.693"/>
+      <testcase name="Login with Invalid Password" classname="Login Functionality" time="5.876">
+        <failure>
+          <expected>Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.</expected>
+          <actual>Warning: No match for E-Mail Address and/or Password.</actual>
+          org.junit.ComparisonFailure: expected:&lt;Warning: [Your account has exceeded allowed number of login attempts. Please try again in 1 hour].&gt; but was:&lt;Warning: [No match for E-Mail Address and/or Password].&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:117)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:146)&#13;
+	at org.nadim.stepdefinations.TC001_Login.user_should_get_wranning_message(TC001_Login.java:56)&#13;
+	at ✽.user should get Wranning message(file:///G:/02.%20Automation%20Testing/Cucumber%20Project%20WorkSpace/CucumberHybridFramework/src/test/resources/features/Login.feature:28)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="Login without credentials" classname="Login Functionality" time="5.03"/>
+    </testsuite>
+    <testsuite name="Search Functionality" time="10.085">
+      <testcase name="Searching with Valid product Name" classname="Search Functionality" time="5.184"/>
+      <testcase name="Searching with invalid Product Name" classname="Search Functionality" time="4.901"/>
+    </testsuite>
+  </testsuite>
+</testrun>

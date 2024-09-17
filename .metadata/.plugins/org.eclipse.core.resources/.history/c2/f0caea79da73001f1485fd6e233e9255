@@ -1,0 +1,38 @@
+##This feature file contains all Register functionality test scenarios
+
+@register
+Feature: Register Functionality
+
+  @tag1
+  Scenario: Create New Account with Mandatory Fields
+    Given User Should Navigate to register Page
+    When User enter below fields data
+    |firstname       |Attab            |
+    |lastname        |Ahmed            |					 
+    |e-mail          |attab26@gmail.com|
+    |telephone       |098172363        |
+    |password        |54321            |
+    |confirm password|54321            |
+    And click on subscribe no radio button
+    And click on Privacy Policy checkbox
+    Then navigate to account success page and show success message 
+
+  @tag2
+  Scenario: Create new Account with existing email address
+      Given User Should Navigate to register Page
+    When User enter below fields data
+    |firstname       |Samad            |
+    |lastname        |Ali              |					 
+    |e-mail          |attab26@gmail.com|
+    |telephone       |017893032        |
+    |password        |123654           |
+    |confirm password|123654           |
+    And click on subscribe no radio button
+    And click on Privacy Policy checkbox
+    Then User should get Wranning message 
+
+
+    Examples: 
+      | name  | value | status  |
+      | name1 |     5 | success |
+      | name2 |     7 | Fail    |

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="CucumberHybridFramework" tests="6" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="org.nadim.testrunner.TestRunner" incomplete="true">
+    <testsuite name="Login Functionality" incomplete="true">
+      <testcase name="Login with valid Credentials" classname="Login Functionality" time="226.655"/>
+      <testcase name="Login with Invalid Email Address" classname="Login Functionality" incomplete="true"/>
+      <testcase name="Login with Invalid Password" classname="Login Functionality" incomplete="true"/>
+      <testcase name="Login without credentials" classname="Login Functionality" incomplete="true"/>
+    </testsuite>
+    <testsuite name="Search Functionality" incomplete="true">
+      <testcase name="Searching with Valid product Name" classname="Search Functionality" incomplete="true"/>
+      <testcase name="Searching with invalid Product Name" classname="Search Functionality" incomplete="true"/>
+    </testsuite>
+  </testsuite>
+</testrun>
